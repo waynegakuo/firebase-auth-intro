@@ -1,1 +1,3 @@
-# firebase-auth-intro
+# Firebase Authentication Intro
+
+![Screenshot](/assets/imgs/screenshot.png)
