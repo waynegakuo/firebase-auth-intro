@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Authentication</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+    <nav>
+        <p>Firebase Auth</p>
+
+        <button class="burger" id="burger">
+            &#9776
+        </button>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="gif">
+            <img src="assets/imgs/giphy.gif" alt="">
+        </div>
+        <p class="email-show"></p>
+        <div class="signup-login">
+            <!-- Sign up form -->
+            <form class="signup-form" id="signup-form">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Email Address">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password">
+                <button>Sign In with Email & Password</button>
+                <p class="error"></p>
+            </form>
+
+            <!-- Login Form -->
+            <form class="login-form" id="login-form">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Email Address">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password">
+                <button >Log In User</button>
+                <p class="error"></p>
+            </form>
+        </div>
+        <button class="logout" style="display: none;" onclick="logoutUser()">Logout</button>
+    </div>
+</body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-functions.js"></script>
+
+<script src="scripts/firebase.js"></script>
+<script src="scripts/index.js"></script>
+
+</html>
